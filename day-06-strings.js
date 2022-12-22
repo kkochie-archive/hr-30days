@@ -1,4 +1,4 @@
-/*
+/* --EASY
 Objective:
 Today we will expand our knowledge of strings, combining it with what we have already learned about loops.
 

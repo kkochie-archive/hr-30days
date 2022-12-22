@@ -1,4 +1,4 @@
-//Data Types
+//Data Types --EASY
 
 // Declare second integer, double, and String variables.
 let a

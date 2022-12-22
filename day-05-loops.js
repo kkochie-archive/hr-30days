@@ -1,4 +1,4 @@
-/* Loops
+/* Loops --EASY
 
 Objective
 In this challenge, we will use loops to do some math. Check out the Tutorial tab to learn more.

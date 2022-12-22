@@ -1,4 +1,4 @@
-/* Conditional Statements
+/* Conditional Statements --EASY
 
 Task
 Given an integer, n, perform the following conditional actions:

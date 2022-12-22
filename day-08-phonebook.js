@@ -59,109 +59,23 @@ Harry is one of the keys in the dictionary, so we print harry=12299933.
 function processData(input) {
 
   // Convert input to array. Remember split returns a new array.
-  const inputArr = input.split('\n')
+  const inputArr = input.split("\n")
   const entries = parseInt(inputArr[0])
   const phonebook = []
 
   // Create phonebook entries
   for (let i = 0; i < entries; i++) {
-    let entry = inputArr[0 + 1]
+    let entry = inputArr[i + 1]
     entry = entry.split(' ')
     phonebook[entry[0]] = entry[1]
   }
-  console.log(phonebook)
 
   // Match queries to phonebook entries
-  for (let i = entries + 1; i < inputArr.length; i++ ) {
+  for (let i = entries+1; i < inputArr.length; i++ ) {
     if (phonebook[inputArr[i]]) {
       console.log(inputArr[i] + "=" + phonebook[inputArr[i]])
     } else {
-      "Not found"
+      console.log("Not found")
     } 
   }
 } 
-
-console.log(processData(
-  3/n
-  "sam 99912222"/n
-  "tom 11122222"/n
-  "harry 12299933"/n
-  "sam"/n
-  "edward"/n
-  "harry"))
-
-
-// for(let i = index+1; i < inputArr.length; i++) {
-//   if(phonebook[inputArr[i]]) {
-//       console.log(inputArr[i] + '=' + phonebook[inputArr[i]]);
-//   } else {
-//       console.log('Not found')
-//   }
-// }
-// /////
-
-// function processData(input) {
-//   /// use forEach instead of map because map returns an array?
-//     //Enter your code here
-//     const array = input.split('\n')
-		
-//     const arrayContacts = array.slice(1, (+array[0] + 1))
-//     const arrayNames = array.slice((+array[0] + 1))
-   
-//     const contacts = {}
-		
-//     arrayContacts.map(contact => {
-//         const [name, phone] = contact.split(' ')
-//         contacts[name] = phone
-//     })
-    
-//     arrayNames.map(name => {
-//         if (contacts[name]) {
-//             console.log(`${name}=${contacts[name]}`)
-//         } else {
-//             console.log('Not found')
-//         }
-//     })
-// } 
-// //////
-
-// function processData(input) {
-//   let _input = input.split("\n");
-//   let n = _input.shift();
-//   let input2 = _input.join(" ").split(" ");
-//   let phoneBook = {};
-//   for (let i = 0; i < n * 2; i += 2) {
-//     phoneBook[input2[i]] = input2[i + 1];
-//   }
-//   for (let j = n * 2; j < input2.length; ++j) {
-//     if (phoneBook[input2[j]]) {
-//       console.log(`${input2[j]}=${phoneBook[input2[j]]}`);
-//     } else {
-//       console.log("Not found");
-//     }
-//   }
-// }
-
-// ////
-
-// function processData(input) {
-//   const inputArr = input.split("\n");
-//   const index = parseInt(inputArr[0]);
-//   const phonebook = [];
-  
-
-//   for (let i = 0; i< index; i++){
-//       let line = inputArr[i+1];
-//       line = line.split(' ');
-//       phonebook[line[0]] = line[1]
-//   }
-  
-//   for(let i = index+1; i < inputArr.length; i++) {
-//       if(phonebook[inputArr[i]]) {
-//           console.log(inputArr[i] + '=' + phonebook[inputArr[i]]);
-//       } else {
-//           console.log('Not found')
-//       }
-//   }
-// } 
-// ////
